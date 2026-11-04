@@ -1,0 +1,11 @@
+<!DOCTYPE html><html lang="vi"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Travel Survey</title><link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"><link href="css/style.css" rel="stylesheet"></head><body><nav class="navbar navbar-expand-md navbar-dark fixed-top"><div class="container"><a class="navbar-brand fw-bold" href="index.html">✈ Travel Survey</a><button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#nv"><span class="navbar-toggler-icon"></span></button><div id="nv" class="collapse navbar-collapse"><ul class="navbar-nav ms-auto"><li><a class="nav-link" href="index.html">Trang chủ</a></li><li><a class="nav-link" href="survey.html">Khảo sát</a></li><li><a class="nav-link" href="results.html">Thống kê</a></li><li><a class="nav-link" href="index.html#gioithieu">Giới thiệu</a></li></ul></div></div></nav>
+<main class="container pt-5 mt-5 pb-5"><div class="col-lg-9 mx-auto">
+<h2 class="text-primary mb-3">Khảo sát du lịch</h2>
+<div class="progress mb-1"><div id="bar" class="progress-bar bg-success" style="width:0"></div></div>
+<small id="stepLabel" class="text-muted"></small>
+<div id="alertBox" class="alert alert-danger mt-3 d-none"></div>
+<form id="surveyForm" class="card shadow-sm p-4 mt-3" novalidate><div id="steps"></div>
+<div class="d-flex justify-content-between mt-4"><button type="button" id="prev" class="btn btn-outline-primary">← Quay lại</button><button type="button" id="next" class="btn btn-primary">Tiếp tục →</button></div></form>
+<div id="thanks" class="card shadow-sm p-5 text-center d-none"><h2 class="text-success">🎉 Cảm ơn bạn đã tham gia!</h2><p>Khảo sát đã được lưu thành công.</p><div><a href="results.html" class="btn btn-primary">Xem thống kê</a> <button id="again" class="btn btn-outline-success">Làm lại</button></div></div>
+</div></main>
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script><script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script><script src="js/main.js"></script><script src="js/survey.js"></script></body></html>
